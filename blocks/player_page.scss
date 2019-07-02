@@ -7,7 +7,6 @@
 }
 
 #player{
-position: relative;
 width: 41.25rem;
 height:25.31rem;
 
@@ -20,6 +19,19 @@ height:25.31rem;
       width: 32rem;
         }
      
+}
+.video__player{
+margin: 0 auto;
+position: relative;
+}
+
+.video__player img{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 .player__container{
   display: flex;
@@ -34,13 +46,13 @@ height:25.31rem;
 
 }
 
-.play--video{
-  position: absolute;
-  display: flex;
-  top: 55%;
-  left: 47%;
-  cursor: pointer;
-}
+// .play--video{
+//   position: absolute;
+//   display: flex;
+//   top: 55%;
+//   left: 47%;
+//   cursor: pointer;
+// }
 
 .play--active{
   opacity:0;
@@ -56,20 +68,20 @@ height:25.31rem;
   justify-content: space-between;
   padding: 0 1rem;
   align-items: center;
- /// bottom: 2rem;
+  bottom: 0rem;
 
   & img{
     cursor: pointer;
   }
 
   @include tablets {
-   // bottom: 7.3rem;
+    bottom: 2.3rem;
     width: 37rem;
 
       }
     
       @include phones {
-  //bottom: 10rem;
+  bottom: 2rem;
   width: 32rem;
           }
 
